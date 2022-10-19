@@ -7,13 +7,13 @@ public class MyPongPanel extends JPanel {
     If you want to see how the code behaves,
     you can comment out any code regarding the Paddle class. 
     */
-    Paddle one; 
-    Paddle two;
+    // Paddle one; 
+    // Paddle two;
     Ball b; 
 
     MyPongPanel() {
-        one = new Paddle(40, 250);
-        two = new Paddle(450, 250);
+        // one = new Paddle(40, 250);
+        // two = new Paddle(450, 250);
         b = new Ball(45);
     }
 
@@ -23,8 +23,8 @@ public class MyPongPanel extends JPanel {
         super.paintComponent(g);
 
         //draw paddles
-        one.draw(g);
-        two.draw(g);
+        // one.draw(g);
+        // two.draw(g);
 
         // draw ball
         b.draw(g);
