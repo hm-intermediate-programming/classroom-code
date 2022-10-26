@@ -52,6 +52,7 @@ public class MyPongPanel extends JPanel {
 
             //check for collision with paddles             
             // TODO: CODE HERE
+            
         
             repaint();
 
