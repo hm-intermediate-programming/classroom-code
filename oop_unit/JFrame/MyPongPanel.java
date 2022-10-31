@@ -39,7 +39,17 @@ public class MyPongPanel extends JPanel {
             b.y += b.dy;
 
             // hit vertical wall 
-            if( b.x+b.diameter >= getWidth() || b.x < 0)
+            boolean inRightPaddle = b.x + b.diameter >= two.x 
+                && b.x <= two.x + two.width && 
+                b.y + b.diameter >= two.y && 
+                b.y <= two.y + two.height;
+            boolean inLeftPaddle = b.x + b.diameter >= one.x 
+                && b.x <= one.x + one.width && 
+                b.y + b.diameter >= one.y && 
+                b.y <= one.y + one.height;
+            
+            if( b.x+b.diameter >= getWidth() || b.x < 0 
+                || inRightPaddle || inLeftPaddle)
             {
                 b.dx = -1*b.dx;
             }

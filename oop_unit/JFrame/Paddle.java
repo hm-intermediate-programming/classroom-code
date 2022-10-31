@@ -7,7 +7,7 @@ public class Paddle {
     int x; 
     int y; 
     int width = 10; // x 
-    int length = 100; // y 
+    int height = 100; // y 
 
     // Constructor
     Paddle(int x, int y) {
@@ -17,7 +17,7 @@ public class Paddle {
 
     void draw(Graphics g) {
         g.setColor(Color.BLUE);
-        g.fillRect(this.x, this.y, this.width, this.length);
+        g.fillRect(this.x, this.y, this.width, this.height);
     }
 
 }
