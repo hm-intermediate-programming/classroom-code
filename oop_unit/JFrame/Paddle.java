@@ -2,7 +2,6 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 public class Paddle {
-
     // Fields 
     int x; 
     int y; 
@@ -19,5 +18,4 @@ public class Paddle {
         g.setColor(Color.BLUE);
         g.fillRect(this.x, this.y, this.width, this.height);
     }
-
 }
