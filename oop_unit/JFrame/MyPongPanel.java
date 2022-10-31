@@ -59,10 +59,6 @@ public class MyPongPanel extends JPanel {
             {
                 b.dy = -1*b.dy;
             }
-
-            //check for collision with paddles             
-            // TODO: CODE HERE
-            
         
             repaint();
 
