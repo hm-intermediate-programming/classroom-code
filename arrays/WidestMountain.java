@@ -1,5 +1,4 @@
 package arrays;
-import java.util.Scanner;
 
 /* 
 This problem is in the PClassic 2022s Problem Set (https://pclassic.org/problems)
