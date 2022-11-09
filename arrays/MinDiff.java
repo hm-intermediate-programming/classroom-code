@@ -31,8 +31,15 @@ public class MinDiff {
 
     // Do not modify above this line
     public static int minDiff(int[] stones) {
-        int minDiff = Integer.MAX_VALUE; // make it the biggest integer
-        return 0;
+        int smallestSoFar = Integer.MAX_VALUE; // make it the biggest integer
+        for(int i = 0; i < stones.length - 1 ; i++) {
+            int currentDiff = Math.abs(stones[i] - stones[i + 1]);
+            if (currentDiff < smallestSoFar) {
+                // update what is the smallest
+                smallestSoFar = currentDiff; 
+            }
+        }
+        return smallestSoFar;
     }
 
 }
