@@ -18,7 +18,7 @@ public class ErrorChecking {
             System.out.println("This is a number");
             if (input > 5 || input < 1) {
                 System.out.println("Hey! this number is not what I wanted. Try again.");
-                errorCheck(sc);
+                return errorCheck(sc);
             } else {
                 System.out.println("Yay! This is what I expected");
                 return input;
@@ -26,8 +26,7 @@ public class ErrorChecking {
         } else {
             System.out.println("This is not a number. Discarding this input");
             sc.next(); // discarding the next input
-            errorCheck(sc);
+            return errorCheck(sc);
         }
-        return -1; // this will never actually return -1 because we are always calling the function again.
     }
 }
